@@ -1,0 +1,127 @@
+***
+Git Instructions:
+***
+
+Before Each Checkpoint:
+  git status
+  git checkout -b <new_branch_name>
+
+To push a commit (backup your work) before the end of the checkpoint:
+  git status
+  git add .
+  git status
+  git commit -m "Notes on project"
+  git push origin <branch_name>
+  ** Now you resume working as you were before **
+
+After Each Checkpoint:
+  git status
+  git add .
+  git status
+  git commit -m "Notes on project"
+  git push origin <branch_name>
+  git checkout master
+  git merge <branch_name>
+  git push
+
+Before Each Assignment:
+  git status
+  git checkout -b <new_branch_name>
+
+After Each Assignment:
+  git status
+  git add .
+  git status
+  git commit -m "Assignment notes"
+  git push origin <branch_name>
+  git checkout master
+
+Create a new project:
+  rails new <repo_name> -T
+  ---
+  Sign into your GitHub account.
+  Create a new repo named <repo_name>
+  ---
+  Go back to git and do the following:
+  git init
+  git add .
+  git commit -m 'First commit and README update'
+  git remote add origin git@github.com:<user name>/<repo_name>.git
+  git push -u origin master
+
+Clone an existing Github project:
+  Navigate to Rails folder
+  mkdir <repo_clone_name>
+  cd <repo_clone_name>
+  --
+  Go to github.com
+  copy the SSH link from repo.
+  Navigate to it and select "SSH clone URL"
+  Copy this to your clipboard.
+  --
+  Enter the following into the command prompt:
+  git clone <text-from-clipboard> .
+  **Note: Don't forget the space and period at the end.
+
+Move between branches:
+  git checkout <branch_name>
+
+Rename local branch
+  git branch -m <oldname> <newname>
+
+If working from wrong branch:
+  git stash
+  git checkout <branch_name>
+  git stash apply
+
+Delete Branch:
+  git branch -D <branch_name>
+
+Revert file to state of last commit:
+  git checkout -- <file location and name i.e. db/schema.rb>
+
+List all branches:
+  git branch
+
+List all branches with commits:
+  git show-branch
+
+Add Version numbers
+  git tag <version number> <commit id>
+
+Update to Heroku:
+  git push heroku master
+
+If problems in Heroku:
+  heroku run rake db:migrate
+
+***
+Console Instructions:
+***
+
+Reload the console after any change is made:
+  reload!
+
+***
+Database Instructions:
+***
+
+Reset Database with seeds
+  rake db:reset
+
+Rollback database to previous state:
+  rake db:rollback
+
+Completely Empty the Database
+(Useful when redoing a branch and you've already made DB changes)
+  rake db:purge
+
+***
+Rails Commands: *Note: Must be in project folder.*
+***
+
+Start Rails Server:
+  rails S
+
+Start Rails Console
+  rails c
