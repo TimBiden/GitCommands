@@ -63,6 +63,16 @@ Clone an existing Github project:
   git clone <text-from-clipboard> .
   **Note: Don't forget the space and period at the end.
 
+Edit a commit message:
+  git checkout <branch_with_commit_message_to_be_edited>
+  If commit has not been pushed to Github
+    git commit --amend -m "New commit message"
+  --
+  If commit has been pushed to Github
+    git commit --amend - "New commit message"
+    git push <remote> <branch> --force
+      Warning: force-pushing will overwrite the remote branch.
+
 Move between branches:
   git checkout <branch_name>
 
