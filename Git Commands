@@ -50,18 +50,22 @@ Create a new project:
   git push -u origin master
 
 Clone an existing Github project:
-  Navigate to Rails folder
-  mkdir <repo_clone_name>
-  cd <repo_clone_name>
+    Command Prompt:
+      Navigate to Rails folder
   --
-  Go to github.com
-  copy the SSH link from repo.
-  Navigate to it and select "SSH clone URL"
-  Copy this to your clipboard.
+    Web Browser:
+      Go to github.com
+      copy the SSH link from repo.
+      Navigate to it and select "SSH clone URL"
+      Copy this to your clipboard.
   --
-  Enter the following into the command prompt:
-  git clone <text-from-clipboard> .
-  **Note: Don't forget the space and period at the end.
+    Command Prompt:
+      Enter the following into the command prompt:
+      git clone <text-from-clipboard>
+
+How to clone a specific branch in git
+  git clone -b <branch> <SSH link from repo>
+  ex: git clone -b develop git@github.com:user/myproject.git
 
 Edit a commit message:
   git checkout <branch_with_commit_message_to_be_edited>
@@ -98,6 +102,10 @@ List all branches with commits:
 
 Add Version numbers
   git tag <version number> <commit id>
+
+***
+Heroku Instructions:
+***
 
 Update to Heroku:
   git push heroku master
