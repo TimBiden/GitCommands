@@ -49,6 +49,11 @@ Create a new project:
   git remote add origin git@github.com:<user name>/<repo_name>.git
   git push -u origin master
 
+Create an alias to speed up work
+  git config --global alias.<alias word> <Git action word>
+  ex: git config --global alias.co checkout
+  # makes "git co" mean the same thing as "git checkout"
+
 Clone an existing Github project:
     Command Prompt:
       Navigate to Rails folder
