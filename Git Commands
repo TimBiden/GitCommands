@@ -105,8 +105,13 @@ List all branches:
 List all branches with commits:
   git show-branch
 
-Add Version numbers
+Add Version numbers:
   git tag <version number> <commit id>
+
+Have Git autocomplete branch names on a Mac:
+  Find the .bash_profile file and add:
+  if [ -s ~/.bashrc ]; then source ~/.bashrc; fi
+  # Instant Happiness if you use long descriptive branch names
 
 ***
 Heroku Instructions:
