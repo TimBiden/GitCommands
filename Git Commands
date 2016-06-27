@@ -146,8 +146,8 @@ Rollback database to previous state:
   rake db:rollback
 
 Completely Empty the Database
-(Useful when redoing a branch and you've already made DB changes)
   rake db:purge
+  # Useful when redoing a branch and you've already made DB changes
 
 ***
 Rails Commands: *Note: Must be in project folder.*
@@ -158,3 +158,7 @@ Start Rails Server:
 
 Start Rails Console
   rails c
+
+Listing RVM installed rubies:
+  rvm list
+  # Good to help diagnose strange problems like the computer saying RAILS isn't installed.
