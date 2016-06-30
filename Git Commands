@@ -139,7 +139,7 @@ Check logs for a certain source or dyno:
   heroku logs --source <app>
 
 Clear the logs:
-  heroku logs:drains clear
+  heroku drains
 
 ***
 Console Instructions:
