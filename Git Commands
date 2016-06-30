@@ -128,6 +128,19 @@ Update to Heroku:
 If problems in Heroku:
   heroku run rake db:migrate
 
+Check logs:
+  heroku logs
+
+Check last x number of logs:
+  heroku logs -n <number>
+  ex: heroku logs -n 200
+
+Check logs for a certain source or dyno:
+  heroku logs --source <app>
+
+Clear the logs:
+  heroku logs:drains clear
+
 ***
 Console Instructions:
 ***
