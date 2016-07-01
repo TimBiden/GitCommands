@@ -128,6 +128,9 @@ Update to Heroku:
 If problems in Heroku:
   heroku run rake db:migrate
 
+Push a branch to test
+  git push heroku yourbranch:master
+
 Check logs:
   heroku logs
 
