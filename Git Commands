@@ -137,6 +137,8 @@ Go back to master after testing branch:
 
 Check logs:
   heroku logs
+  # Install PaperTrail. It is a whole lot more helpful
+  # https://elements.heroku.com/addons/papertrail
 
 Check last x number of logs:
   heroku logs -n <number>
