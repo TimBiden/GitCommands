@@ -131,6 +131,10 @@ If problems in Heroku:
 Push a branch to test
   git push heroku yourbranch:master
 
+Go back to master after testing branch:
+  git push -f heroku master
+  # Solves Fast-forward error
+
 Check logs:
   heroku logs
 
