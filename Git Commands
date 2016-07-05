@@ -158,7 +158,7 @@ Reload the console after any change is made:
   reload!
 
 ***
-Database Instructions:
+Database Instructions: ** Rails V.4 & Earlier **
 ***
 
 Reset Database with seeds
@@ -169,6 +169,20 @@ Rollback database to previous state:
 
 Completely Empty the Database
   rake db:purge
+  # Useful when redoing a branch and you've already made DB changes
+
+***
+Database Instructions: ** Rails V.5 **
+***
+
+Reset Database with seeds
+  rails db:reset
+
+Rollback database to previous state:
+  rails db:rollback
+
+Completely Empty the Database
+  rails db:purge
   # Useful when redoing a branch and you've already made DB changes
 
 ***
