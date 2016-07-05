@@ -14,6 +14,8 @@ git add .
 git commit -m 'First commit and README update'
 git remote add origin git@github.com:<user name>/<repo_name>.git
 git push -u origin master
+  # Note: If you don't use the above command,
+  # the `git push` commands later will not work.
 
 Before Each New Checkpoint:
   git status
