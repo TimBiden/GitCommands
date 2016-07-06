@@ -55,6 +55,10 @@ Add a single file to the repo:
   git add <directory and file name>
   # ex: git add app/controllers/test_file.rb
 
+Remove a file from the commit:
+  git rm <filename>
+  # ex: git rm app/controllers/test_file.rb
+
 Create an alias to speed up work
   git config --global alias.<alias word> <Git action word>
   ex: git config --global alias.co checkout
