@@ -59,6 +59,10 @@ Remove a file from the commit:
   git rm <filename>
   # ex: git rm app/controllers/test_file.rb
 
+Remove a file from the commit even if changes have been made:
+  git rm -f <filename>
+  # ex: git rm -f log/test.log
+
 Create an alias to speed up work
   git config --global alias.<alias word> <Git action word>
   ex: git config --global alias.co checkout
