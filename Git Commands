@@ -144,6 +144,7 @@ If problems in Heroku:
 
 Push a branch to test
   git push heroku yourbranch:master
+  ex: git push heroku ch-5-and-more:master
 
 Go back to master after testing branch:
   git push -f heroku master
