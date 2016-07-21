@@ -1,6 +1,4 @@
 # GitCommands
-It's a Git cheat-sheet.
+It's expanded from simply a Git cheat-sheet to a general a Ruby on Rails command line cheat-sheet.
 
-Here are a few of the Git Commands I use often in my Bloc education.
-
-There are also a few additional non-git, mainly Ruby on Rails, commands that I find helpful. Hopefully you will too. 
+You'll obviously find Git commands. There are also Ruby on Rails database commands, Heroku commands and whatnot. If you find something that's missing and relevant, feel free to add to it. This is a community project.
