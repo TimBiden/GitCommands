@@ -1,0 +1,32 @@
+***
+Heroku Instructions:
+***
+
+Update to Heroku:
+  git push heroku master
+
+If problems in Heroku:
+  heroku run rake db:migrate
+
+Push a branch to test
+  git push heroku yourbranch:master
+  ex: git push heroku ch-5-and-more:master
+
+Go back to master after testing branch:
+  git push -f heroku master
+  # Solves Fast-forward error
+
+Check logs:
+  heroku logs
+  # Install PaperTrail. It is a whole lot more helpful
+  # https://elements.heroku.com/addons/papertrail
+
+Check last x number of logs:
+  heroku logs -n <number>
+  ex: heroku logs -n 200
+
+Check logs for a certain source or dyno:
+  heroku logs --source <app>
+
+Clear the logs:
+  heroku drains
