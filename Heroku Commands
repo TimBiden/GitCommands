@@ -12,6 +12,12 @@ Push a branch to test
   git push heroku yourbranch:master
   ex: git push heroku ch-5-and-more:master
 
+Force Pushing a branch to test
+  git push heroku <yourbranch>:<master> --force
+  ex: git push heroku ch-5-and-more:master --force
+  # Used when Heroku may technically be ahead of current commit.
+  # This often happens after using Reset or Revert
+
 Go back to master after testing branch:
   git push -f heroku master
   # Solves Fast-forward error

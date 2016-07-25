@@ -110,8 +110,13 @@ If working from wrong branch:
 Delete Branch:
   git branch -D <branch_name>
 
-Revert file to state of last commit:
+Revert one specific file to state of last commit:
   git checkout -- <file location and name i.e. db/schema.rb>
+
+Revert all files to a previous commit:
+  git reset --hard <old-commit-id>
+  git push -f <remote-name> <branch-name>
+  # Note: Using this is dangerous in a collaborative environment: you're rewriting history
 
 List all branches:
   git branch
