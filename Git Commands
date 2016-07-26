@@ -99,13 +99,16 @@ Edit a commit message:
 Move between branches:
   git checkout <branch_name>
 
-Rename local branch
+Rename local branch:
   git branch -m <oldname> <newname>
 
 If working from wrong branch:
   git stash
   git checkout <branch_name>
   git stash apply
+
+Create a new branch from earlier commit:
+  git branch branchname <sha1-of-commit>
 
 Delete Branch:
   git branch -D <branch_name>
