@@ -8,10 +8,10 @@
 
   3. Go back to git and do the following:
   ..1. git init
-  ..1. git add .
-  ..1. git commit -m 'First commit and README update'
-  ..1. git remote add origin git@github.com:<user name>/<repo_name>.git
-  ..1. git push -u origin master
+  ..2. git add .
+  ..3. git commit -m 'First commit and README update'
+  ..4. git remote add origin git@github.com:<user name>/<repo_name>.git
+  ..5. git push -u origin master
     * Note: If you don't use the above command,
     * the `git push` commands later will not work.
 
