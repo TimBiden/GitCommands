@@ -33,6 +33,7 @@
   *Now you resume working as you were before*
 
 ### After Each New Checkpoint:
+  ```
   git status
   git add .
   git status
@@ -41,37 +42,51 @@
   git checkout master
   git merge <branch_name>
   git push
+    ```
 
 ### Before Each Assignment:
+  ```
   git status
   git checkout -b <new_branch_name>
+  ```
 
 ### After Each Assignment:
+  ```
   git status
   git add .
   git status
   git commit -m "Assignment notes"
   git push origin <branch_name>
   git checkout master
+  ```
 
 ### Add a single file to the repo:
+  ```
   git add <directory and file name>
+  ```
   # ex: git add app/controllers/test_file.rb
 
 ### Remove a file from the commit:
+  ```
   git rm <filename>
+  ```
   # ex: git rm app/controllers/test_file.rb
 
 ### Remove a file from the commit even if changes have been made:
+  ```
   git rm -f <filename>
+  ```
   # ex: git rm -f log/test.log
 
 ### Create an alias to speed up work
+  ```
   git config --global alias.<alias word> <Git action word>
+  ```
   ex: git config --global alias.co checkout
-  # makes "git co" mean the same thing as "git checkout"
+  _makes "git co" mean the same thing as "git checkout"_
 
 ### Clone an existing Github project:
+  ```
     Command Prompt:
       Navigate to Rails folder
   --
@@ -84,12 +99,16 @@
     Command Prompt:
       Enter the following into the command prompt:
       git clone <text-from-clipboard>
+  ```
 
 ### How to clone a specific branch in git
+  ```
   git clone -b <branch> <SSH link from repo>
+  ```
   ex: git clone -b develop git@github.com:user/myproject.git
 
 ### Edit a commit message:
+  ```
   git checkout <branch_with_commit_message_to_be_edited>
   If commit has not been pushed to Github
     git commit --amend -m "New commit message"
@@ -97,27 +116,40 @@
   If commit has been pushed to Github
     git commit --amend - "New commit message"
     git push <remote> <branch> --force
+  ```
       Warning: force-pushing will overwrite the remote branch.
 
 ### Move between branches:
+  ```
   git checkout <branch_name>
+  ```
 
 ### Rename local branch:
+  ```
   git branch -m <oldname> <newname>
+  ```
 
 ### If working from wrong branch:
+  ```
   git stash
   git checkout <branch_name>
   git stash apply
+  ```
 
 ### Create a new branch from earlier commit:
+  ```
   git branch branchname <sha1-of-commit>
+  ```
 
 ### Delete Branch:
+  ```
   git branch -D <branch_name>
+  ```
 
 ### Revert one specific file to state of last commit:
+  ```
   git checkout -- <file location and name i.e. db/schema.rb>
+  ```
 
 ### Revert all files to a previous commit:
   ```
