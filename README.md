@@ -5,11 +5,11 @@ You'll obviously find Git commands. There are also Ruby on Rails database comman
 
 ##Table of Contents
 
-###Git Commands
+###Git Commands###
 https://github.com/TimBiden/GitCommands/blob/master/Git%20Commands
 
-###Heroku Commands
+###Heroku Commands###
 https://github.com/TimBiden/GitCommands/blob/master/Heroku%20Commands
 
-###Rails Commands
+###Rails Commands###
 https://github.com/TimBiden/GitCommands/blob/master/Rails%20Commands
