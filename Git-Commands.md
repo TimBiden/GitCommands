@@ -142,15 +142,15 @@
   ```
 
 ### Have Git autocomplete branch names on a Mac:
-  ```
-  Copy file below to ~/ directory.
+  1. Copy file below to ~/ directory.
   https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-  Add following line to ~/.bashrc file:
+  2. Add following line to ~/.bashrc file:
   source ~/.git-completion.bash
-  Find the .bash_profile file and add:
+  3. Find the .bash_profile file and add:
   if [ -s ~/.bashrc ]; then source ~/.bashrc; fi
-  ```
+
   *Instant Happiness if you use long descriptive branch names*
+
   *Thanks to Jack Schuss for this one.*
 
 ### How to re-enable ability to commit after changing repo URL:
