@@ -22,7 +22,7 @@
   git checkout -b <new_branch_name>
   ```
 
-To push a commit (backup your work) before the end of the checkpoint:
+### To push a commit (backup your work) before the end of the checkpoint:
   ```
   git status
   git add .
@@ -32,7 +32,7 @@ To push a commit (backup your work) before the end of the checkpoint:
   ```
   *Now you resume working as you were before*
 
-After Each New Checkpoint:
+### After Each New Checkpoint:
   git status
   git add .
   git status
@@ -42,11 +42,11 @@ After Each New Checkpoint:
   git merge <branch_name>
   git push
 
-Before Each Assignment:
+### Before Each Assignment:
   git status
   git checkout -b <new_branch_name>
 
-After Each Assignment:
+### After Each Assignment:
   git status
   git add .
   git status
@@ -54,24 +54,24 @@ After Each Assignment:
   git push origin <branch_name>
   git checkout master
 
-Add a single file to the repo:
+### Add a single file to the repo:
   git add <directory and file name>
   # ex: git add app/controllers/test_file.rb
 
-Remove a file from the commit:
+### Remove a file from the commit:
   git rm <filename>
   # ex: git rm app/controllers/test_file.rb
 
-Remove a file from the commit even if changes have been made:
+### Remove a file from the commit even if changes have been made:
   git rm -f <filename>
   # ex: git rm -f log/test.log
 
-Create an alias to speed up work
+### Create an alias to speed up work
   git config --global alias.<alias word> <Git action word>
   ex: git config --global alias.co checkout
   # makes "git co" mean the same thing as "git checkout"
 
-Clone an existing Github project:
+### Clone an existing Github project:
     Command Prompt:
       Navigate to Rails folder
   --
@@ -85,11 +85,11 @@ Clone an existing Github project:
       Enter the following into the command prompt:
       git clone <text-from-clipboard>
 
-How to clone a specific branch in git
+### How to clone a specific branch in git
   git clone -b <branch> <SSH link from repo>
   ex: git clone -b develop git@github.com:user/myproject.git
 
-Edit a commit message:
+### Edit a commit message:
   git checkout <branch_with_commit_message_to_be_edited>
   If commit has not been pushed to Github
     git commit --amend -m "New commit message"
@@ -99,41 +99,41 @@ Edit a commit message:
     git push <remote> <branch> --force
       Warning: force-pushing will overwrite the remote branch.
 
-Move between branches:
+### Move between branches:
   git checkout <branch_name>
 
-Rename local branch:
+### Rename local branch:
   git branch -m <oldname> <newname>
 
-If working from wrong branch:
+### If working from wrong branch:
   git stash
   git checkout <branch_name>
   git stash apply
 
-Create a new branch from earlier commit:
+### Create a new branch from earlier commit:
   git branch branchname <sha1-of-commit>
 
-Delete Branch:
+### Delete Branch:
   git branch -D <branch_name>
 
-Revert one specific file to state of last commit:
+### Revert one specific file to state of last commit:
   git checkout -- <file location and name i.e. db/schema.rb>
 
-Revert all files to a previous commit:
+### Revert all files to a previous commit:
   git reset --hard <old-commit-id>
   git push -f <remote-name> <branch-name>
   # Note: Using this is dangerous in a collaborative environment: you're rewriting history
 
-List all branches:
+### List all branches:
   git branch
 
-List all branches with commits:
+### List all branches with commits:
   git show-branch
 
-Add Version numbers:
+### Add Version numbers:
   git tag <version number> <commit id>
 
-Have Git autocomplete branch names on a Mac:
+### Have Git autocomplete branch names on a Mac:
   Copy file below to ~/ directory.
     https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
   Add following line to ~/.bashrc file:
@@ -143,6 +143,6 @@ Have Git autocomplete branch names on a Mac:
   # Instant Happiness if you use long descriptive branch names
   # Thanks to Jack Schuss for this one.
 
-How to re-enable ability to commit after changing repo URL:
+### How to re-enable ability to commit after changing repo URL:
   git remote set-url origin <SSH link from repo>
   ex: git remote set-url origin git@github.com:user/myproject.git
