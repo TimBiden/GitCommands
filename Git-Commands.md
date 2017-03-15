@@ -2,18 +2,18 @@
 
 ### Create a new project:
   rails new <repo_name> -T
-  -
-  Sign into your GitHub account.
-  Create a new repo named <repo_name>
-  -
-  Go back to git and do the following:
-  git init
-  git add .
-  git commit -m 'First commit and README update'
-  git remote add origin git@github.com:<user name>/<repo_name>.git
-  git push -u origin master
-    # Note: If you don't use the above command,
-    # the `git push` commands later will not work.
+
+  1. Sign into your GitHub account.
+  2. Create a new repo named <repo_name>
+
+  3. Go back to git and do the following:
+  ..1. git init
+  ..1. git add .
+  ..1. git commit -m 'First commit and README update'
+  ..1. git remote add origin git@github.com:<user name>/<repo_name>.git
+  ..1. git push -u origin master
+    * Note: If you don't use the above command,
+    * the `git push` commands later will not work.
 
 Before Each New Checkpoint:
   git status
