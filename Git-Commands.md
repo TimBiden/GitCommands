@@ -153,7 +153,7 @@
 
   *Instant Happiness if you use long descriptive branch names*
 
-  *Thanks to Jack Schuss for this one.*
+  *Thanks to [Jack Schuss](https://github.com/yakschuss) for this one.*
 
 ### How to re-enable ability to commit after changing repo URL:
   ```
