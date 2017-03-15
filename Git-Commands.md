@@ -64,25 +64,25 @@
   ```
   git add <directory and file name>
   ```
-  # ex: git add app/controllers/test_file.rb
+  _ex: git add app/controllers/test_file.rb_
 
 ### Remove a file from the commit:
   ```
   git rm <filename>
   ```
-  # ex: git rm app/controllers/test_file.rb
+  _ex: git rm app/controllers/test_file.rb_
 
 ### Remove a file from the commit even if changes have been made:
   ```
   git rm -f <filename>
   ```
-  # ex: git rm -f log/test.log
+  _ex: git rm -f log/test.log_
 
 ### Create an alias to speed up work
   ```
   git config --global alias.<alias word> <Git action word>
   ```
-  ex: git config --global alias.co checkout
+  _ex: git config --global alias.co checkout_
   _makes "git co" mean the same thing as "git checkout"_
 
 ### Clone an existing Github project:
