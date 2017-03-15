@@ -1,7 +1,9 @@
 # Git Instructions:
 
 ## Create a new project:
+  ```
   rails new <repo_name> -T
+  ```
 
   1. Sign into your GitHub account.
   2. Create a new repo named <repo_name>
@@ -86,20 +88,16 @@
   _makes "git co" mean the same thing as "git checkout"_
 
 ## Clone an existing Github project:
-  ```
-    Command Prompt:
-      Navigate to Rails folder
-  --
-    Web Browser:
-      Go to github.com
-      copy the SSH link from repo.
-      Navigate to it and select "SSH clone URL"
-      Copy this to your clipboard.
-  --
-    Command Prompt:
-      Enter the following into the command prompt:
-      git clone <text-from-clipboard>
-  ```
+  1. Command Prompt:
+      1. Navigate to Rails folder
+  2.  Web Browser:
+      1. Go to github.com
+      2. copy the SSH link from repo.
+      3. Navigate to it and select "SSH clone URL"
+      4. Copy this to your clipboard.
+  3.  Command Prompt:
+      1. Enter the following into the command prompt:
+      2. git clone <text-from-clipboard>
 
 ## How to clone a specific branch in git
   ```
