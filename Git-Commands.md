@@ -156,7 +156,7 @@
   git reset --hard <old-commit-id>
   git push -f <remote-name> <branch-name>
   ```
-  # Note: Using this is dangerous in a collaborative environment: you're rewriting history
+  _**Note:** Using this is dangerous in a collaborative environment: you're rewriting history_
 
 ### List all branches:
   ```
