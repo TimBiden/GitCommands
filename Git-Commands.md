@@ -142,12 +142,14 @@
   ```
 
 ### Have Git autocomplete branch names on a Mac:
-  1. Copy file below to ~/ directory.
-  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-  2. Add following line to ~/.bashrc file:
-  source ~/.git-completion.bash
-  3. Find the .bash_profile file and add:
+  1. Copy file below to _~/ directory_. **https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash**
+
+  2. Add following line to _~/.bashrc_ file:  **source ~/.git-completion.bash**
+
+  3. Find the _.bash_profile_ file and add:
+  ```
   if [ -s ~/.bashrc ]; then source ~/.bashrc; fi
+  ```
 
   *Instant Happiness if you use long descriptive branch names*
 
