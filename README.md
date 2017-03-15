@@ -6,7 +6,7 @@ You'll obviously find Git commands. There are also Ruby on Rails database comman
 ## Table of Contents ##
 
 ### Git Commands ###
-https://github.com/TimBiden/GitCommands/blob/master/Git%20Commands
+https://github.com/TimBiden/GitCommands/blob/master/Git-Commands.md
 
 ### Heroku Commands ###
 https://github.com/TimBiden/GitCommands/blob/master/Heroku%20Commands
