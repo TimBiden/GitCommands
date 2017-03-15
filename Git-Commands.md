@@ -2,10 +2,10 @@
 
 ### Create a new project:
   rails new <repo_name> -T
-  ---
+  -
   Sign into your GitHub account.
   Create a new repo named <repo_name>
-  ---
+  -
   Go back to git and do the following:
   git init
   git add .
