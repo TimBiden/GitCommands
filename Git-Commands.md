@@ -120,21 +120,30 @@
   git checkout -- <file location and name i.e. db/schema.rb>
 
 ### Revert all files to a previous commit:
-  ```git reset --hard <old-commit-id>
-  git push -f <remote-name> <branch-name>```
+  ```
+  git reset --hard <old-commit-id>
+  git push -f <remote-name> <branch-name>
+  ```
   # Note: Using this is dangerous in a collaborative environment: you're rewriting history
 
 ### List all branches:
-  ```git branch```
+  ```
+  git branch
+  ```
 
 ### List all branches with commits:
-  ```git show-branch```
+  ```
+  git show-branch
+  ```
 
 ### Add Version numbers:
-  ```git tag <version number> <commit id>```
+  ```
+  git tag <version number> <commit id>
+  ```
 
 ### Have Git autocomplete branch names on a Mac:
-  ```Copy file below to ~/ directory.
+  ```
+  Copy file below to ~/ directory.
     https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
   Add following line to ~/.bashrc file:
     source ~/.git-completion.bash
