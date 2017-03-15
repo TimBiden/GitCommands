@@ -140,9 +140,11 @@
     source ~/.git-completion.bash
   Find the .bash_profile file and add:
     if [ -s ~/.bashrc ]; then source ~/.bashrc; fi
-  # Instant Happiness if you use long descriptive branch names
-  # Thanks to Jack Schuss for this one.
+  *Instant Happiness if you use long descriptive branch names*
+  *Thanks to Jack Schuss for this one.*
 
 ### How to re-enable ability to commit after changing repo URL:
+  ```
   git remote set-url origin <SSH link from repo>
+  ```
   ex: git remote set-url origin git@github.com:user/myproject.git
