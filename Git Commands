@@ -1,8 +1,6 @@
-***
-Git Instructions:
-***
+# Git Instructions:
 
-Create a new project:
+### Create a new project:
   rails new <repo_name> -T
   ---
   Sign into your GitHub account.
