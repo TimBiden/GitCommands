@@ -136,8 +136,9 @@
 
 ## Create a new branch from earlier commit:
   ```
-  git branch branchname <sha1-of-commit>
+  git checkout -b branchname <sha1-of-commit>
   ```
+  ex: git checkout -b install-node-modules 4abc90b810249j25bc0481c89612d00dlcd2a91e
 
 ## Delete Branch:
   ```
