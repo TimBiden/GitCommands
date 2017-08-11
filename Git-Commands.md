@@ -95,7 +95,7 @@
       2. copy the SSH link from repo.
       3. Navigate to it and select "SSH clone URL"
       4. Copy this to your clipboard.
-  3.  Command Prompt:
+      3.  Command Prompt:
       1. Enter the following into the command prompt:
       2. git clone <text-from-clipboard>
 
@@ -132,6 +132,11 @@
   git stash
   git checkout <branch_name>
   git stash apply
+  ```
+
+## Load and run/view site from earlier commits:
+  ```
+  git checkout <sha1-of-commit>
   ```
 
 ## Create a new branch from earlier commit:
