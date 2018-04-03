@@ -196,3 +196,10 @@
   git remote set-url origin <SSH link from repo>
   ```
   ex: git remote set-url origin git@github.com:user/myproject.git
+  
+## How to ignore file after it's already been committed:
+  Edit `.gitignore` to match the file you want to ignore
+  ```
+  git rm --cached /path/to/file
+  ```
+  ex: git rm --cached config/database.yml
