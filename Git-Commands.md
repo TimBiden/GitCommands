@@ -203,3 +203,17 @@
   git rm --cached /path/to/file
   ```
   ex: git rm --cached config/database.yml
+
+## How to reconnect VSC to GitHub
+  In case your token expires or you receive a "failed to authenticate to git remote" message.
+  Go to:
+  ```
+  https://github.com/settings/apps
+  ```
+  Choose your token type.
+  Choose the token security settings appropriate for your needs.
+  Copy your token.
+  Go to your Terminal in VSC and enter:
+  ```
+  git remote set-url origin https://<TOKEN>@github.com/<user_name or organization_name>/<repo_name>.git
+  ```
