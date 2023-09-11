@@ -217,3 +217,6 @@
   ```
   git remote set-url origin https://<TOKEN>@github.com/<user_name or organization_name>/<repo_name>.git
   ```
+  ### If you receive a "remote repository not found" error:
+  Redo previous code with your username, not your email address.
+  Yes, I made this mistake.
